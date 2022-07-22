@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b550290aef.js" crossorigin="anonymous"></script>
+    <title>Sorting Visualizer</title>
+</head>
+<body>
+    <h1 id="title">Sorting Visualizer</h1>
+    <nav class="navbar">
+        <div class="left">
+            <button class="btn" id="new">New Array</button>
+        </div>
+        <div id="Stop">
+            <p>Stop</p>
+            <i class="fa-solid fa-stop fa-2x" id="stop"></i>
+        </div>
+        <div>
+            <span id="range">
+                <div class="slider">
+                    <input type="range" id="size" min="5" max="100" step=1 value=70>
+                    <p id="Size">Size</p>
+                </div>
+                <div class="slider">
+                    <input type="range" id="speed" min="20" max="400" stepDown=10 value=40>
+                    <p id="Speed">Speed</p>
+                </div>
+                
+            </span>
+        </div>
+        <div class="right">
+            <button class="btn" id="bubble">Bubble Sort</button>
+            <button class="btn" id="selection">Selection Sort</button>
+            <button class="btn" id="insertion">Insertion Sort</button>
+            <button class="btn" id="quick">Quick Sort</button>
+            <button class="btn" id="merge">Merge Sort</button>
+        </div>
+    </nav>
+    <main id="main"></main>
+    <div id="infobtns"></div>
+    <script src="scripts//sorting.js"></script>
+    <script src="scripts//bubble.js"></script>
+    <script src="scripts//insertion.js"></script>
+    <script src="scripts//selection.js"></script>
+    <script src="scripts//merge.js"></script>
+    <script src="scripts//quick.js"></script>
+</body>
+</html>
